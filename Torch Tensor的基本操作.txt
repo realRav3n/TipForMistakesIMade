@@ -1,0 +1,14 @@
+1.转换次序：
+T.permute(1, 0)
+
+2.改变形状:
+T.reshape
+
+3.去除长度为1的
+T.squeeze()
+
+4.增加一个维度
+T.unsqueeze()
+
+5.和reshape一样
+T.view()

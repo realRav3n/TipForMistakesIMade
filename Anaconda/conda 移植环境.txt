@@ -1,0 +1,6 @@
+1.首先激活环境：
+conda activate xxx
+2.导出
+conda env export > environment.yml
+
+conda env create -f environment.yml

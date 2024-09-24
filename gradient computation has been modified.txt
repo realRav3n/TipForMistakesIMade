@@ -1,0 +1,4 @@
+RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1, 400, 9]], which is output 0 of UnsqueezeBackward1, is at version 1; expected version 0 instead. Hint: the backtrace further above shows the operation that failed to compute its gradient. The variable in question was changed in there or anywhere later. Good luck!
+
+
+变量被莫名修改，找到对应的变量，将其clone()

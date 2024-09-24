@@ -1,0 +1,6 @@
+numpy的ndarray转化为torch：
+torch.from_numpy().to(device)
+
+转化为float():
+xxxxx.float()
+

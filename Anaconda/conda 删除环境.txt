@@ -1,0 +1,3 @@
+conda env list 查看环境
+
+conda remove --name xxx --all

@@ -1,0 +1,2 @@
+1.可以考虑使用list存放batch data
+例如bs=32：可设置List[ndarray]，用的时候使用for循环取出其内数据

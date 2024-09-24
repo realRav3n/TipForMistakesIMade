@@ -1,0 +1,9 @@
+直接安装
+python -m spacy download en_core_web_sm
+conda强制安装
+conda install -c conda-forge spacy-model-en_core_web_sm
+本地安装，改成你的spacy版本
+pip3 install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz
+
+
+pip install spacy==3.7.2时，使用3.7.1版本的en_core
