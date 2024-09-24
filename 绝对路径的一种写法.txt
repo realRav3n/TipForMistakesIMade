@@ -1,0 +1,2 @@
+from os.path import dirname
+    path = f'{dirname(__file__)}/bert/'

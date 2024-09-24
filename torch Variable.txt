@@ -1,0 +1,20 @@
+在老版本的torch中，用于把tensor类型变量转化为Variable变量，用于进行求导。
+在0.4版本后，与tensor进行合并
+
+
+import torch
+from torch.autograd import Variable
+
+tensor = torch.FloatTensor([[1, 2], [3, 4]])
+variable = Variable(tensor, requires_grad=True)
+
+
+和
+
+
+import torch
+
+tensor = torch.FloatTensor([[1, 2], [3, 4]])
+tensor.requires_grad_(True) //打开自动求导
+
+相同

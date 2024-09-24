@@ -1,0 +1,28 @@
+numpy版：
+np.random.normal(loc=0, scale=1, size=70).to(device)
+
+torch版：
+torch.randn(size=(70,), dtype=torch.float).to(device)
+torch.normal(mean=muR, std=dltR, size=(70,), dtype=torch.float).to(device)
+
+多维正态分布：
+# cov要求是 正定&对称矩阵
+# u/cov:参数，标准正态分布取None  
+# dim:维度       
+# is_standard=True/False 
+# samples:取样数目
+def n_dim_Gaussian(self, u, conv, dim=256, is_standard=True, samples=70):
+        if u is None and conv is None and is_standard:
+            u = torch.zeros(dim)
+            conv = torch.eye(dim)
+        multivariate_normal = torch.distributions.MultivariateNormal(u, conv)
+        samples = multivariate_normal.sample((samples,)).float()
+        print(samples.shape)
+        return samples
+
+
+由于在很多地方都需要使用高斯分布对实际数据集建模，一般来说，高斯分布的维度取决于样本所包含的类别。
+例如在Topic Model中，一般将维度选择为Topic的数量
+
+
+

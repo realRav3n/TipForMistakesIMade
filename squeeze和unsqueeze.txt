@@ -1,0 +1,7 @@
+tensor.squeeze()		去除厚度为1的维度
+
+tensor.squeeze(axis=i)	去除第i个维度
+
+tensor.shape = (3,)
+tensor.unsqueeze_(0)		在第0维加一个维度
+tensor.shape = (1,3)

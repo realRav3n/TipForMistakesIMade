@@ -1,0 +1,2 @@
+系统盘不要用balenaetcher
+用rufus

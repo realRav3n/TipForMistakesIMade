@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/data/SAM/pre_apps/try_model_test/test_blip.py", line 36, in <module>
+    model = blip_vqa(pretrained=model_url, image_size=image_size, vit='base')
+  File "/data/blip/BLIP/models/blip_vqa.py", line 171, in blip_vqa
+    model = BLIP_VQA(**kwargs)
+  File "/data/blip/BLIP/models/blip_vqa.py", line 27, in __init__
+    self.tokenizer = init_tokenizer()  
+  File "/data/blip/BLIP/models/blip.py", line 187, in init_tokenizer
+    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+  File "/data/anaconda/anaconda3/envs/clip/lib/python3.9/site-packages/transformers/tokenization_utils_base.py", line 1825, in from_pretrained
+    raise EnvironmentError(
+OSError: Can't load tokenizer for 'bert-base-uncased'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'bert-base-uncased' is the correct path to a directory containing all relevant files for a BertTokenizer tokenizer.
+
+Process finished with exit code 1
+
+
+
+
+
+先试用
+HF_ENDPOINT=https://hf-mirror.com

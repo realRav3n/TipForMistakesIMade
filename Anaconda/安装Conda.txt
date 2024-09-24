@@ -1,0 +1,6 @@
+安装Conda
+bash Conda.xxx.xxx.sh
+source ~/.bashrc
+
+
+https://blog.csdn.net/Zen_of_code/article/details/125579392
