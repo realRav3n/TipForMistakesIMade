@@ -1,1 +1,3 @@
 # TipForMistakesIMade
+
+记录我在代码编写过程中发现的解决方案
